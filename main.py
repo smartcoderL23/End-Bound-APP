@@ -9,7 +9,8 @@ SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-PLAYER_SURFACE = pygame.image.load('find.png').convert_alpha()
+PLAYER_SURFACE = pygame.image.load('Screenshot 2024-10-03 8.36.42 AM.png
+Lat.png').convert_alpha()
 PLAYER_SURFACE = pygame.transform.scale(PLAYER_SURFACE, (200, 150))
 PLAYER = PLAYER_SURFACE.get_rect(midbottom=(400, 600))
 
