@@ -3,10 +3,7 @@ import random
 import time
  # a= int(input("start"))
 pygame.init()  # initialize pygame
-score = 0
-diabetes = 0
-drop_speed = .51
-collect_location = 0
+
 # Step 1: create game window
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
