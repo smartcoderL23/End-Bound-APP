@@ -20,8 +20,21 @@ BACKROUND = BG_SURFACE.get_rect()
 
 Cookie_SURFACE = pygame.image.load('cookie.png').convert_alpha()
 Cookie_SURFACE = pygame.transform.scale(Cookie_SURFACE, (61, 61))
-Cookie = Cookie_SURFACE.get_rect(midbottom=(random.randint(0, SCREEN_WIDTH),
-                                                50))
+Cookie = Cookie_SURFACE.get_rect(midbottom=(random.randint(0, SCREEN_WIDTH), 50))
+
+class SpriteObject(pygame.sprite.Sprite):
+    # [...]
+
+    def update(self, event_list):
+
+        for event in event_list:
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                if self.rect.collidepoint(event.pos):
+                    # [...]
+
+my_sprite = SpriteObject()
+group = pygame.sprite.Group(Screenshot 2024-10-03 8.36.42 AM.png
+Lat.png)
 
 font = pygame.font.Font('cookie.ttf', 50)
 
